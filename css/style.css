@@ -500,7 +500,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Sections Header
 --------------------------------*/
-
 .section-header {
   margin-bottom: 30px;
 }
@@ -1136,4 +1135,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   #contact #google-map {
     margin-top: 20px;
   }
+}
+
+#legionofmary, #svdp, #klca {
+    margin-top: 3rem;
 }

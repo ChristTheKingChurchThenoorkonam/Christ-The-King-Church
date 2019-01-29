@@ -27,6 +27,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/piano.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: Reveal
@@ -100,18 +101,125 @@
   </section><!-- #intro -->
 
   <main id="main">
-
     <!--==========================
       About Section
     ============================-->
-    <section id="about" class="wow fadeInUp">
+    <section id="choir" class="wow fadeInUp">
       <div class="container">
+        <div class="section-header">
+          <h2>Our Church Choir</h2>
+        </div>
         <div class="row">
-          <div class="col-lg-6 about-img">
-            <img src="img/about-img.jpg" alt="">
-          </div>
+          <div class="col-lg-8 piano-container">
+            <audio id="mid-dAudio">
+                <source src="http://www.freesound.org/data/previews/117/117713_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
 
-          <div class="col-lg-6 content">
+            <audio id="mid-dsharpAudio">
+                <source src="http://www.freesound.org/data/previews/117/117712_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <audio id="mid-eAudio">
+                <source src="http://www.freesound.org/data/previews/117/117689_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <audio id="mid-fAudio">
+                <source src="http://www.freesound.org/data/previews/117/117691_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+
+            <audio id="mid-fsharpAudio">
+                <source src="http://www.freesound.org/data/previews/117/117690_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <audio id="mid-fsharpAudio">
+                <source src="http://www.freesound.org/data/previews/117/117690_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <audio id="mid-gAudio">
+                <source src="http://www.freesound.org/data/previews/117/117693_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <audio id="mid-gsharpAudio">
+                <source src="http://www.freesound.org/data/previews/117/117692_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <audio id="mid-aAudio">
+                <source src="http://www.freesound.org/data/previews/117/117683_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <audio id="mid-asharpAudio">
+                <source src="http://www.freesound.org/data/previews/117/117682_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <audio id="mid-bAudio">
+                <source src="http://www.freesound.org/data/previews/117/117684_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <audio id="high-cAudio">
+                <source src="http://www.freesound.org/data/previews/117/117686_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <audio id="high-csharpAudio">
+                <source src="http://www.freesound.org/data/previews/117/117685_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <audio id="high-dAudio">
+                <source src="http://www.freesound.org/data/previews/117/117688_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <audio id="high-dsharpAudio">
+                <source src="http://www.freesound.org/data/previews/117/117687_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <audio id="high-eAudio">
+                <source src="http://www.freesound.org/data/previews/117/117701_646701-lq.mp3" type="audio/mpeg"></source> 
+            </audio>
+
+            <div class="piano">
+              <div class="top-section">
+                <div class="songs">
+                <button id="furElise" onclick="playFurElise()"></button>
+                <button id="hedwigsTheme" onclick="playHedwigsTheme()"></button>
+                </div></div>
+
+              <div class="white-section">
+                <div id="mid-d" class="white-key"></div>
+                <div id="mid-e" class="white-key"></div>
+                <div id="mid-f" class="white-key"></div>
+                <div id="mid-g" class="white-key"></div>
+                <div id="mid-a" class="white-key"></div>
+                <div id="mid-b" class="white-key"></div>
+                <div id="high-c" class="white-key"></div>
+                <div id="high-d" class="white-key"></div>
+                <div id="high-e" class="white-key"></div>
+              </div>
+
+
+              <div class="black-section">
+                <div id="b1" class="black-key-border">
+                  <div id="mid-d-sharp" class="black-key"></div>
+                </div>
+                <div id="b2" class="black-key-border">
+                  <div id="mid-f-sharp" class="black-key"></div>
+                </div>
+                <div id="b3" class="black-key-border">
+                  <div id="mid-g-sharp" class="black-key"></div>
+                </div>
+                <div id="b4" class="black-key-border">
+                  <div id="mid-a-sharp" class="black-key"></div>
+                </div>
+                <div id="b5" class="black-key-border">
+                  <div id="high-c-sharp" class="black-key"></div>
+                </div>
+                <div id="b6" class="black-key-border">
+                  <div id="high-d-sharp" class="black-key"></div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- piano -->
+
+          <div class="col-lg-4 content">
             <!-- <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
             <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
 
@@ -120,457 +228,128 @@
               <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
               <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
             </ul> -->
-              <h5>ക്രിസ്തുരാജ ദേവാലയം, തെന്നൂർക്കോണം</h5>
-                <p>
-                                    മൺമറഞ്ഞുപോയ ആയി രാജ്യത്തിന്റെ തലസ്ഥാനമായിരുന്ന വിഴിഞ്ഞത്തിനു സമീപമാണ് തെന്നൂർക്കോണം ക്രിസ്തുരാജ ദേവാലയം സ്ഥിതിചെയ്യുന്നത്. അപ്പൊസ്തലപ്രമുഖരായ പത്രോസിന്റെയും പൗലോസിന്റെയും നാമധേയത്തിലായിരുന്നു ഈ ദേവാലയം സ്ഥാപിതമായത്. ഇപ്പോൾ ഇതിനെ ക്രിസ്തുരാജ ദേവാലയമായി നാമകരണം ചെയ്തിരിക്കുന്നു. ക്രൈസ്തവ വിശ്വാസം സ്വീകരിച്ച ഏതാനും ആൾക്കാർ ഇവിടെയുണ്ടായിരുന്നു. ഹൈന്ദവ ക്രൈസ്തവ വിവാഹ ബന്ധങ്ങളിലൂടെയും ഭവന സന്ദർശനങ്ങളിലൂടെയും വിശ്വാസം വളർന്നുവന്നു. ഇവിടെ ഒരു ദേവാലയം നിർമ്മിക്കുന്നതിനായി 1966 ൽ 24 സെൻറ് സ്ഥലം വാങ്ങി. 1968-ൽ ദേവാലയം പണികഴിപ്പിച്ചു. ആരംഭത്തിൽ മാസത്തിലൊരിക്കൽ മാത്രമേ ദിവ്യബലി ഉണ്ടായിരുന്നുള്ളൂ. അർ. ഈയോസ് , ഫ്രാൻസിസ് ഡികോസ്റ്റ്, ഉപദേശിമാർ ആദ്യകാല വിശ്വാസികൾ മുതലായവരുടെ പ്രവർത്തനഫലമായി ഇപ്പോൾ 38 കുടുംബങ്ങൾ അംഗങ്ങളായിട്ടുണ്ട്. മതബോധനം, വിൻസെന്റ് ഡി പോൾ സൊസൈറ്റി, ലീജിയൻ ഓഫ് മേരി, കെ.എൽ.സി.എ., എൽ.സി.വയ്.യം എന്നിവ ഇവിടെ പ്രവർത്തിക്കുന്നു. ഈ ഇടവകയിൽ സെന്റ്മേരീസ്, ഇസ്രായേൽ എന്നീ 2 ബി.സി.സി. യൂണിറ്റുകളും അതിലൂടെ രൂപപ്പെട്ട അജപാലന സമിതിയും പ്രവർത്തിക്കുന്നു. വിശുദ്ധ ജോസഫിന്റെ നാമത്തിലുള്ള ഒരു കുരിശടിയും ഇവിടെയുണ്ട്. 
-                </p>
-                <p>
-                    Christ The King Church, Thenoorkonam is situated near Vizhinjam, which was the capital of ancient 'Ayi Kingdom'. At the beginning this church was named after apostles Peter and Paul. Later it was renamed as Christ The King Church. There are few Christians in this area. Most of them are from inter religious marriage between Hindus and Christians. 24 cents of land was brought on 1966 for building this church and it was completed on 1968. During the initial days, holy mass was only performed once a month. Currently there are 38 families. Catholic associations like Catechism, LCYM, KLCA, Vincent de pole Society and Legion of Mary are active in this church. Currently there are 2 BCC units in this church (St. Mary unit and Israel unit).
-                </p>
-
+              <h5>A Church Choir is a Symbol of Togetherness.</h5>
+              <p>
+                Choirs are the most visible aspect of a church service. For singers and listeners alike, choirs fill our hearts with a crescendo of joy.
+              </p>
           </div>
         </div>
 
       </div>
     </section><!-- #about -->
-
+    
     <!--==========================
-      Services Section
+      LCYM Section
     ============================-->
-    <section id="services">
+    <section id="lcym" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Services</h2>
-          <p>Christ The King Church, Thennoorkonam is a Latin Catholic church and following are the services provided by our church.</p>
+          <h2>Latin Catholic Youth Movement</h2>
         </div>
-
+        
         <div class="row">
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInLeft">
-              <img src="img/cap_ask_a_priest.ico" class="icon"></img>
-              <h4 class="title"><a href="ask_a_priest.html">Ask a Priest</a></h4>
-              <p class="description">Got a question? Need an answer? Submit you question Here. Ask a Priest is a Q&A feature that anyone can use. You can ask any faith based question here.</p>
-            </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5 about-img">
+            <img src="img/lcym_logo.jpg" alt="" style="width:456px; height:500px;">
           </div>
 
-          <div class="col-lg-6">
-            <div class="box wow fadeInRight">
-              <img src="img/library.ico" class="icon"></img>
-              <h4 class="title"><a href="">Library</a></h4>
-              <p class="description">We got a wonderful church library with Christian books and other educational books. It also include a digital library with Christian movies and animation stories.</p>
-            </div>
+          <div class="col-lg-6 content">
+                <p>
+                  The Latin Catholic Youth Movement (LCYM) is an organization for the Catholic youth. Previously it was known as KCYM. Kerala Catholic Youth Movement (KCYM) had Catholic youth from three rites (Latin, Syro-Malabar and Syro-Malankara) of Christian community of Kerala in India. Today 3 rites have individual youth movements. The patron saint of KCYM and LCYM is Saint Thomas More. It is affiliated to the National Youth Body the "Indian Catholic Youth Movement" (ICYM). It consists of youngsters between the age group of 15– 35 years who subscribe to Catholic values and principles, but beneficiaries include the youth of other religions.
+                </p>
+                <p>
+                  Our church has an active LCYM unit. Every Sunday LCYM conduct a 5 minutes meeting. Main meeting is conducted once a month. 
+                </p>
+                <p>'Ask a Priest' program was first introduced by LCYM unit. The Church Library and its Digital Library was also made possible as a result of efforts made by LCYM unit. They also started a YouTube Channel and Website for our church.
+                </p>
           </div>
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <img src="img/catechism.ico" class="icon"></img>
-              <h4 class="title"><a href="">Catechism</a></h4>
-              <p class="description">
-                <blockquote class="blockquote text-right">
-                    <p class="mb-0">In reading the <span>"Catechism of the Catholic Church"<span> we can perceive the wonderful unity of the mystery of God..</p>
-                    <footer class="blockquote-footer"><cite title="Source Title">Pope John Paul II</cite></footer>
-                </blockquote>
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInRight" data-wow-delay="0.2s">
-              <img src="img/church.ico" class="icon"></img>
-              <h4 class="title"><a href="">Church Associations</a></h4>
-              <p class="description">Our church has following associations - LCYM (Latin Catholic Youth Movement), KLCA (Kerala Latin Catholic Association), KLCWA (Kerala Latin Catholic Women's Association), Vincent de Paul Society and Legion of Mary.</p>
-            </div>
-          </div>
-
         </div>
 
       </div>
-    </section><!-- #services -->
-
+    </section><!-- #lcym -->
+    
     <!--==========================
-      Clients Section
+      legion of Mary Section
     ============================-->
-    <!--<section id="clients" class="wow fadeInUp">
+    <section id="legionofmary" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Clients</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <h2>Legion Of Mary</h2>
         </div>
-
-        <div class="owl-carousel clients-carousel">
-          <img src="img/clients/client-1.png" alt="">
-          <img src="img/clients/client-2.png" alt="">
-          <img src="img/clients/client-3.png" alt="">
-          <img src="img/clients/client-4.png" alt="">
-          <img src="img/clients/client-5.png" alt="">
-          <img src="img/clients/client-6.png" alt="">
-          <img src="img/clients/client-7.png" alt="">
-          <img src="img/clients/client-8.png" alt="">
-        </div>
-
-      </div>
-    </section>--><!-- #clients -->
-
-    <!--==========================
-      Our Portfolio Section
-    ============================-->
-    <section id="portfolio" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Gallery</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
-        </div>
-      </div>
-
-      <div class="container-fluid">
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/1.jpg" class="portfolio-popup">
-                <img src="img/portfolio/1.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 1</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/2.jpg" class="portfolio-popup">
-                <img src="img/portfolio/2.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 2</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/3.jpg" class="portfolio-popup">
-                <img src="img/portfolio/3.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 3</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/4.jpg" class="portfolio-popup">
-                <img src="img/portfolio/4.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 4</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/5.jpg" class="portfolio-popup">
-                <img src="img/portfolio/5.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 5</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/6.jpg" class="portfolio-popup">
-                <img src="img/portfolio/6.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 6</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/7.jpg" class="portfolio-popup">
-                <img src="img/portfolio/7.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 7</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/8.jpg" class="portfolio-popup">
-                <img src="img/portfolio/8.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 8</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #portfolio -->
-
-    <!--==========================
-      Testimonials Section
-    ============================-->
-    <!--<section id="testimonials" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
-        </div>
-        <div class="owl-carousel testimonials-carousel">
-
-            <div class="testimonial-item">
-              <p>
-                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-              </p>
-              <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
-            </div>
-
-            <div class="testimonial-item">
-              <p>
-                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-              </p>
-              <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-            </div>
-
-            <div class="testimonial-item">
-              <p>
-                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-              </p>
-              <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
-            </div>
-
-            <div class="testimonial-item">
-              <p>
-                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-              </p>
-              <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-
-            <div class="testimonial-item">
-              <p>
-                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-              </p>
-              <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-            </div>
-
-        </div>
-
-      </div>
-    </section>--><!-- #testimonials -->
-
-    <!--==========================
-      Call To Action Section
-    ============================-->
-    <section id="call-to-action" class="wow fadeInUp">
-      <div class="container">
+        
         <div class="row">
-          <div class="col-lg-6 text-center text-lg-left">
-            <h3 class="cta-title">Vatican and Holy Land</h3>
-            <div class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p class="cta-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div class="carousel-item">
-                        <p class="cta-text">Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
-                    </div>
-                </div>
-            </div>
-            <!--<p class="cta-text">as in http://www.lourdesforanetvm.in/?i=1 -> Notice, but horizontal Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4 about-img">
+            <img src="img/legion_of_mary_logo.png" alt="" style="height:300px;">
           </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="http://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/tour-virtuale.html" target="_blank">Visit Vatican</a>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://www.p4panorama.com/panos/HOLYLAND/" target="_blank">Visit Holy Land</a>
+
+          <div class="col-lg-6 content">
+                <p>
+                  The Legion of Mary is an international association of members of the Roman Catholic Church who serve it on a voluntary basis. It was founded in Dublin, as a Roman Catholic Marian Movement by the layman and civil servant Frank Duff. It is the largest apostolic organisation of lay people in the Catholic Church. 
+                </p>
+                <p>
+                  Legion of Mary in our church help Christians and Non - Christians in there needs. They conduct home visits and help members of our community to live a Christian life. They bring children to Sunday school if the family fails. They conduct meetings on every Friday in church. 
+                </p>
+
           </div>
         </div>
 
       </div>
-    </section><!-- #call-to-action -->
-
+    </section><!-- #legionofmary -->
+    
     <!--==========================
-      Our Team Section
+      SVDP
     ============================-->
-    <section id="team" class="wow fadeInUp">
+    <section id="svdp" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Our Council</h2>
+          <h2>St. Vincent de Paul Society </h2>
         </div>
+        
         <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team-1.jpg" alt=""></div>
-              <div class="details">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5 about-img">
+            <img src="img/svdp_logo.gif" alt="" style="width:350px; height:350px;">
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team-2.jpg" alt=""></div>
-              <div class="details">
-                <h4>Sarah Jhinson</h4>
-                <span>Product Manager</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team-3.jpg" alt=""></div>
-              <div class="details">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team-4.jpg" alt=""></div>
-              <div class="details">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
+          <div class="col-lg-6 content">
+            <p>
+              The Society of St Vincent de Paul is an international voluntary organization in the Catholic Church, founded in 1833 for the sanctification of its members by personal service of the poor. Among its varied efforts to offer material help to the poor or needy, the Society also has thrift stores which sell donated goods at a low price and raise money for the poor. 
+            </p>
+            <p>
+              Vincent de Paul Society in our church provides study materials to economically backward students and help the poor in there need. The society also provides food materials to poor during festival seasons like in Onam and Christmas. They also visit sick in hospital and in home. 
+            </p>
           </div>
         </div>
 
       </div>
-    </section><!-- #team -->
-
+    </section><!-- #svdp -->
+    
     <!--==========================
-      Contact Section
+      KLCA
     ============================-->
-    <section id="contact" class="wow fadeInUp">
+    <section id="klca" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Contact Us</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <h2>Kerala Latin Catholic Association</h2>
         </div>
-
-        <div class="row contact-info">
-
-          <div class="col-md-4">
-            <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
-              <h3>Address</h3>
-              <address>Christ The King Church Mukkola-Thennoorkonam Rd, Vizhinjam, Kovalam, Kerala 695521</address>
-            </div>
+        
+        <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5 about-img">
+            <img src="img/klca.jpg" alt="" style="width:350px; height:350px;">
           </div>
 
-          <div class="col-md-4">
-            <div class="contact-phone">
-              <i class="ion-ios-telephone-outline"></i>
-              <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
-            </div>
+          <div class="col-lg-6 content">
+            <p>
+              Kerala Latin Catholic Association (KLCA) is a forum of lay people of Latin Catholic Church of Kerala. KLCA units of the Latin Dioceses of Kerala, only those formally recognized by the respective Bishops, are the fractions of KLCA units of the Kerala State. The Operational area of KLCA is the total geographical jurisdiction of the Latin Dioceses of Kerala. Its central office is situated in Cochin at present. All the Archbishops and Bishops of the Latin Dioceses of Kerala are the Patrons of the Association. KLCA is placed under the authority of KRLCBC (Kerala Region Latin Catholic Bishop’s Council). 
+            </p>
           </div>
-
-          <div class="col-md-4">
-            <div class="contact-email">
-              <i class="ion-ios-email-outline"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:ckcthenoorkonam@gmail.com">ckcthenoorkonam@gmail.com</a></p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="container mb-4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15788.778988205446!2d77.0046259!3d8.382496699999997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6f0027d09ee3da1!2sChrist+The+King+Church!5e0!3m2!1sen!2sin!4v1547294025646" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-
-      <div class="container">
-        <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
         </div>
 
       </div>
-    </section><!-- #contact -->
-
+    </section><!-- #svdp -->
+    
   </main>
 
   <!--==========================
@@ -612,6 +391,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="js/piano.js"></script>
 
 </body>
 </html>
